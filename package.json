@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "dev": "ts-node src/server.ts",
-  "build": "tsc",
-  "start": "node dist/server.js",
-  "test": "jest --passWithNoTests",
-  "lint": "eslint \"**/*.{ts,tsx}\""
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint \"**/*.{ts,tsx}\""
   },
   "repository": {
     "type": "git",
@@ -23,11 +23,21 @@
   "homepage": "https://github.com/deephayerlittran/Assignment_1_BED#readme",
   "devDependencies": {
     "@types/express": "^5.0.3",
+    "@types/jest": "^29.5.12",
     "@types/node": "^24.5.0",
+    "@types/supertest": "^6.0.3",
+    "jest": "^29.7.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": ["**/test/**/*.test.ts"]
   }
 }
